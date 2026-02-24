@@ -1,8 +1,80 @@
 {
   "name": "jimeng-workflow",
+  "displayName": "即梦AI创作工作流",
   "version": "1.0.0",
-  "description": "即梦AI创作工作流插件 - 支持AI短剧、视频提示词生成等创作流程",
-  "author": "hestudy",
-  "repository": "https://github.com/hestudy/jimeng-workflow",
-  "keywords": ["claude-code", "plugin", "jimeng", "ai-drama", "video-prompts"]
+  "description": "即梦AI创作工作流插件 - 支持AI短剧制作、视频/图片提示词生成、角色场景设计等完整创作流程",
+  "author": {
+    "name": "hestudy",
+    "email": "hestudy@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hestudy/jimeng-workflow"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "jimeng",
+    "ai-drama",
+    "video-prompts",
+    "seedance",
+    "seedream",
+    "short-drama",
+    "ai-video"
+  ],
+  "categories": ["productivity", "ai-tools", "content-creation"],
+  "icon": "icon.png",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "engines": {
+    "claude-code": ">=1.0.0"
+  },
+  "contributes": {
+    "commands": [
+      { "command": "drama-new", "title": "创建AI短剧项目" },
+      { "command": "drama-plan", "title": "策划阶段 - 故事大纲" },
+      { "command": "drama-character", "title": "角色设计" },
+      { "command": "drama-scene", "title": "场景设计" },
+      { "command": "drama-storyboard", "title": "分镜脚本" },
+      { "command": "drama-prompt", "title": "Seedance 2.0 视频提示词" },
+      { "command": "drama-image", "title": "Seedream 4.0-4.5 图片提示词" },
+      { "command": "drama-script", "title": "配音台本" },
+      { "command": "drama-review", "title": "分镜审核" },
+      { "command": "drama-export", "title": "导出提示词" }
+    ],
+    "agents": [
+      { "name": "drama-creator", "description": "AI短剧创作代理" }
+    ],
+    "settings": {
+      "defaultOutputDir": {
+        "type": "string",
+        "default": "./output",
+        "description": "默认输出目录"
+      },
+      "videoPromptStyle": {
+        "type": "string",
+        "enum": ["seedance-1.0", "seedance-2.0"],
+        "default": "seedance-2.0",
+        "description": "视频提示词风格版本"
+      },
+      "imagePromptStyle": {
+        "type": "string",
+        "enum": ["seedream-4.0", "seedream-4.5"],
+        "default": "seedream-4.5",
+        "description": "图片提示词风格版本"
+      }
+    }
+  },
+  "marketplace": {
+    "featured": false,
+    "premium": false,
+    "pricing": "free",
+    "homepage": "https://github.com/hestudy/jimeng-workflow#readme",
+    "bugs": "https://github.com/hestudy/jimeng-workflow/issues",
+    "screenshots": [
+      "docs/screenshots/workflow.png",
+      "docs/screenshots/output.png"
+    ]
+  }
 }

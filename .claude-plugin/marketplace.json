@@ -1,0 +1,42 @@
+{
+  "$schema": "https://claude-code.dev/schemas/marketplace.json",
+  "marketplace": {
+    "name": "即梦AI工作流插件",
+    "maintainer": "hestudy",
+    "url": "https://github.com/hestudy/jimeng-workflow"
+  },
+  "plugins": [
+    {
+      "id": "jimeng-workflow",
+      "name": "即梦AI创作工作流",
+      "version": "1.0.0",
+      "description": "即梦AI创作工作流插件 - 支持AI短剧制作、视频/图片提示词生成、角色场景设计等完整创作流程",
+      "author": "hestudy",
+      "repository": "https://github.com/hestudy/jimeng-workflow",
+      "download": "https://github.com/hestudy/jimeng-workflow/archive/refs/tags/v1.0.0.tar.gz",
+      "readme": "https://github.com/hestudy/jimeng-workflow#readme",
+      "changelog": "https://github.com/hestudy/jimeng-workflow/blob/main/CHANGELOG.md",
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "plugin",
+        "jimeng",
+        "ai-drama",
+        "video-prompts",
+        "seedance",
+        "seedream"
+      ],
+      "categories": ["productivity", "ai-tools", "content-creation"],
+      "icon": "https://raw.githubusercontent.com/hestudy/jimeng-workflow/main/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/hestudy/jimeng-workflow/main/docs/screenshots/workflow.png"
+      ],
+      "verified": false,
+      "featured": false,
+      "downloads": 0,
+      "rating": 0,
+      "createdAt": "2025-02-24T00:00:00Z",
+      "updatedAt": "2025-02-24T00:00:00Z"
+    }
+  ]
+}
