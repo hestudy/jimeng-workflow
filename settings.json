@@ -1,0 +1,7 @@
+{
+  "jimeng-workflow": {
+    "defaultOutputDir": "./output",
+    "videoPromptStyle": "seedance-2.0",
+    "imagePromptStyle": "seedream-4.5"
+  }
+}

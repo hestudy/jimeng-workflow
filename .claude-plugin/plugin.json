@@ -1,0 +1,8 @@
+{
+  "name": "jimeng-workflow",
+  "version": "1.0.0",
+  "description": "即梦AI创作工作流插件 - 支持AI短剧、视频提示词生成等创作流程",
+  "author": "hestudy",
+  "repository": "https://github.com/hestudy/jimeng-workflow",
+  "keywords": ["claude-code", "plugin", "jimeng", "ai-drama", "video-prompts"]
+}
