@@ -5,7 +5,11 @@ Claude Code 插件，用于即梦AI创作工作流，支持视频/图片提示�
 ## 安装
 
 ```bash
-/plugin install <marketplace-url>/jimeng-workflow
+# 添加市场
+/plugin marketplace add hestudy/jimeng-workflow
+
+# 安装插件
+/plugin install jimeng-workflow@jimeng-workflow
 ```
 
 ## 使用方法
